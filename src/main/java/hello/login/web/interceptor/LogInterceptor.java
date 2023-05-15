@@ -25,7 +25,7 @@ public class LogInterceptor implements HandlerInterceptor {
         //@RequestMapping사용시에는 handlerMethod가 넘어오고
         //정적 리소스는 ResourceHttpRequestHandler가 넘어온다.
         if (handler instanceof HandlerMethod) {
-            HandlerMethod 핸들러 = (HandlerMethod) handler;//호출할 컨트롤러 메서드이 모든 정보가 포함되어 있다.
+            HandlerMethod 핸들러 = (HandlerMethod) handler;//호출할 컨트롤러 메서드들이 모든 정보가 포함되어 있다.
         }
 
         log.info("REQUEST [{}][{}][{}]", uuid, requestURI, handler);
